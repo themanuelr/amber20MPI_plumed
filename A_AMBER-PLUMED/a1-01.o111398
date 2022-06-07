@@ -1,0 +1,80 @@
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/work/xxxx/programs/plumed2-2.8/src/lib/libplumedKernel.so" +++
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.8.0-dev (git: 72987d4-dirty) compiled on Apr 28 2021 at 14:50:06
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /work/xxxx/programs/plumed2-2.8/
+PLUMED: For installed feature, see /work/xxxx/programs/plumed2-2.8//src/config/config.txt
+PLUMED: Molecular dynamics engine: amber
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 8
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 1751
+PLUMED: File suffix: 
+PLUMED: FILE: plumed1.dat
+PLUMED: Action UNITS
+PLUMED:   with label @0
+PLUMED:   length: A = 0.1 nm
+PLUMED:   energy: kcal/mol = 4.184 kj/mol
+PLUMED:   time: ps
+PLUMED:   charge: e
+PLUMED:   mass: amu
+PLUMED:   using physical units
+PLUMED:   inside PLUMED, Boltzmann constant is 0.0019872
+PLUMED: Action MOLINFO
+PLUMED:   with label @1
+PLUMED:   pdb file named ala2.ref.pdb contains 1 chains 
+PLUMED:   chain named   contains residues 1 to 577 and atoms 1 to 1751 
+PLUMED: Action TORSION
+PLUMED:   with label phi
+PLUMED:   between atoms 5 7 9 15
+PLUMED:   using periodic boundary conditions
+PLUMED: Action TORSION
+PLUMED:   with label psi
+PLUMED:   between atoms 7 9 15 17
+PLUMED:   using periodic boundary conditions
+PLUMED: Action OPES_METAD_EXPLORE
+PLUMED:   with label opes
+PLUMED:   with arguments phi psi
+PLUMED:   added component to this action:  opes.bias 
+PLUMED:  +++ WARNING +++ using TEMP=285 while MD engine uses 309.998
+PLUMED:  +++ WARNING +++ the provided STATE_RFILE will be ignored, since RESTART was not requested
+PLUMED:   added component to this action:  opes.rct 
+PLUMED:   added component to this action:  opes.zed 
+PLUMED:   added component to this action:  opes.neff 
+PLUMED:   added component to this action:  opes.nker 
+PLUMED:   temperature = 285
+PLUMED:   beta = 1.76568
+PLUMED:   depositing new kernels with PACE = 500
+PLUMED:   expected BARRIER is 2
+PLUMED:   using target distribution with BIASFACTOR gamma = 3.53137
+PLUMED:   adaptive SIGMA will be used, with ADAPTIVE_SIGMA_STRIDE = 5000
+PLUMED:     thus the first x kernel depositions will be skipped, x = ADAPTIVE_SIGMA_STRIDE/PACE = 10
+PLUMED:   kernels are truncated with KERNELS_CUTOFF = 2.65758
+PLUMED:  +++ WARNING +++ probably kernels are truncated too much
+PLUMED:   the value at cutoff is = 0.0292649
+PLUMED:   regularization EPSILON = 0.247822
+PLUMED:   kernels will be compressed when closer than COMPRESSION_THRESHOLD = 1
+PLUMED:   state checkpoints are written on file compressed_Kernels.data every 50000 MD steps
+PLUMED:   using multiple OpenMP threads per simulation: 8
+PLUMED:   Bibliography: [3]
+PLUMED: Action PRINT
+PLUMED:   with label @5
+PLUMED:   with stride 100
+PLUMED:   with arguments opes.bias opes.rct opes.zed opes.neff opes.nker phi psi
+PLUMED:   on file COLVAR
+PLUMED:   with format  %8.4f
+PLUMED: Action ENDPLUMED
+PLUMED:   with label @6
+PLUMED: END FILE: plumed1.dat
+PLUMED: Timestep: 0.002000
+PLUMED: KbT: 0.616029
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] M. Invernizzi and M. Parrinello, J. Phys. Chem. Lett. 11, 2731-2736 (2020)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+=>> PBS: job killed: walltime 607 exceeded limit 600

@@ -1,0 +1,30 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   gnode16
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   gnode16
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[1654605858.969352] [gnode16:108346:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654605858.969350] [gnode16:108347:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+
+ Running multipmemd version of pmemd Amber20
+    Total processors =     2
+    Number of groups =     2
+
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/work/xxxx/programs/plumed2-2.8/src/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/work/xxxx/programs/plumed2-2.8/src/lib/libplumedKernel.so" +++
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node gnode16 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

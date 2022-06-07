@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   gnode16
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   gnode16
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[1654604818.596661] [gnode16:104315:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1654604818.596661] [gnode16:104316:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+
+ Running multipmemd version of pmemd Amber20
+    Total processors =     2
+    Number of groups =     2
+
+cp: cannot stat ‘compressed_Kernels.data’: No such file or directory
