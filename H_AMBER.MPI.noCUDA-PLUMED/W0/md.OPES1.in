@@ -1,0 +1,18 @@
+production NPT
+ &cntrl
+   imin=0,
+   ntx=1, irest=0,
+   t=0,
+   ntxo=2, ntpr=5000, ntwr=10000000, ntwx=5000, ioutfm=1,
+   nstlim=2500000, dt=0.002,
+   ntt=2, temp0=310, ig=-1, tempi=310, vrand=50000,
+   ntp=1, barostat=2, pres0=1.0, mcbarint=50000,
+   ntc=2,
+   ntf=2, ntb=2, cut=8.,
+   plumed=1, plumedfile='W0/plumed1.dat'
+
+/
+ &ewald
+   ew_type=0, use_pme=1,
+/
+

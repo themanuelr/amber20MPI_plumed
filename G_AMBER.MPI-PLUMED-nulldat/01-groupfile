@@ -1,0 +1,2 @@
+-O -p W0/ala2.top -i W0/md.OPES1.in -c W0/00-ala2.rst -r W0/01-ala2.OPES.rst -x W0/01-ala2.OPES.crd -o W0/01-ala2.OPES.out -ref W0/00-ala2.rst -inf W0/01-ala2.OPES.mdinfo -AllowSmallBox
+-O -p W1/ala2.top -i W1/md.OPES1.in -c W1/00-ala2.rst -r W1/01-ala2.OPES.rst -x W1/01-ala2.OPES.crd -o W1/01-ala2.OPES.out -ref W1/00-ala2.rst -inf W1/01-ala2.OPES.mdinfo -AllowSmallBox

@@ -1,0 +1,24 @@
+UNITS ENERGY=kcal/mol LENGTH=A
+MOLINFO STRUCTURE=W1/ala2.ref.pdb
+
+phi: TORSION ATOMS=@phi-2
+psi: TORSION ATOMS=@psi-2
+
+OPES_METAD_EXPLORE ...
+   LABEL=opes
+   ARG=phi,psi
+   FILE=../Kernels.data
+   RESTART=NO
+   STATE_RFILE=../compressed_Kernels.data
+   STATE_WFILE=../compressed_Kernels.data
+   STATE_WSTRIDE=50000
+   PACE=500
+   BARRIER=2
+   TEMP=285
+   WALKERS_MPI
+... OPES_METAD_EXPLORE
+
+print ARG=opes.*,phi,psi STRIDE=100 FILE=COLVAR FMT=%8.4f
+
+ENDPLUMED
+
